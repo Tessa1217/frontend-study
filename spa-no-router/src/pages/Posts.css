@@ -1,0 +1,45 @@
+ul.card-list {
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+ul.card-list > li:not(:last-of-type) {
+  border-bottom: 1px solid #737475;
+}
+
+.card {
+  display: inline-block;
+  width: 100%;
+  padding: 16px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.card-header {
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.card-body {
+  width: 90%;
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #737475;
+}
+
+.card-body > p {
+  text-align: left;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+}
