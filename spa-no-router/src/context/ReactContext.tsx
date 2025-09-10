@@ -8,11 +8,13 @@ const ReactContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [searchParams, setSearchParams] = useState(
     () => new URLSearchParams(window.location.search)
   );
+  const [params, setParams] = useState({});
 
   useEffect(() => {
-    const onPopState = () => {
+    const onPopState = (e: PopStateEvent) => {
       setPath(window.location.pathname);
       setSearchParams(new URLSearchParams(window.location.search));
+      setParams(e.state || {});
     };
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
@@ -23,6 +25,8 @@ const ReactContextProvider = ({ children }: { children: React.ReactNode }) => {
     setPath,
     searchParams,
     setSearchParams,
+    params,
+    setParams,
   };
 
   return (

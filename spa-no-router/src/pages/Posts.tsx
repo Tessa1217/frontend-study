@@ -1,17 +1,20 @@
 import { useState, useEffect } from "react";
 import type { PostProps } from "../types";
 import "./Posts.css";
-function PostCard({ id, userId, title, body }: PostProps) {
+import Link from "../components/Link";
+function PostCard({ id, title, body }: PostProps) {
   return (
     <li>
-      <div className="card">
-        <div className="card-header">
-          <h2>{title}</h2>
+      <Link to={{ pathname: `/posts/${id}` }}>
+        <div className="card">
+          <div className="card-header">
+            <h2>{title}</h2>
+          </div>
+          <div className="card-body">
+            <p>{body}</p>
+          </div>
         </div>
-        <div className="card-body">
-          <p>{body}</p>
-        </div>
-      </div>
+      </Link>
     </li>
   );
 }
