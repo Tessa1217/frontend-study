@@ -1,7 +1,7 @@
 export default function Routes({
   children,
 }: {
-  children: React.ReactElement[];
+  children: React.ReactElement | React.ReactElement[];
 }) {
   return <>{children}</>;
 }

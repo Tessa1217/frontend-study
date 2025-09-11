@@ -1,9 +1,9 @@
-import "./AppHeader.css";
-import Link from "../components/Link";
-export default function AppHeader() {
+import Link from "@component/Link";
+
+function AppHeader() {
   return (
-    <header className="site-header">
-      <h1>PostNews</h1>
+    <header className="header">
+      <h1>Simple News Feed</h1>
       <nav>
         <ul>
           <li>
@@ -17,3 +17,5 @@ export default function AppHeader() {
     </header>
   );
 }
+
+export default AppHeader;

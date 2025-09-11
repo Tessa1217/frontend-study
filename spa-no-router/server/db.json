@@ -1,0 +1,284 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "오픈AI, 차세대 GPT 모델 공개",
+      "body": "오픈AI가 차세대 GPT 모델을 공개하며 자연어 처리 분야의 혁신을 이어가고 있다. 이번 모델은 속도와 정확도가 크게 향상되었다. 오픈AI가 차세대 GPT 모델을 공개하며 자연어 처리 분야의 혁신을 이어가고 있다. 이번 모델은 속도와 정확도가 크게 향상되었다. 오픈AI가 차세대 GPT 모델을 공개하며 자연어 처리 분야의 혁신을 이어가고 있다. 이번 모델은 속도와 정확도가 크게 향상되었다. 오픈AI가 차세대 GPT 모델을 공개하며 자연어 처리 분야의 혁신을 이어가고 있다. 이번 모델은 속도와 정확도가 크게 향상되었다.",
+      "category": "Tech",
+      "author": "이현우",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 2,
+      "title": "삼성, 차세대 반도체 생산 계획 발표",
+      "body": "삼성전자가 차세대 2nm 반도체 생산 계획을 발표했다. 글로벌 경쟁력 강화에 초점을 맞추고 있다.",
+      "category": "Business",
+      "author": "박민지",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 3,
+      "title": "손흥민, 프리미어리그서 멀티골 기록",
+      "body": "토트넘의 손흥민 선수가 프리미어리그 경기에서 멀티골을 기록하며 팀의 승리를 이끌었다.",
+      "category": "Sports",
+      "author": "김철수",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 4,
+      "title": "넷플릭스, 한국 드라마 투자 확대",
+      "body": "넷플릭스가 한국 드라마에 대한 투자를 확대하며 글로벌 시청자 확보에 박차를 가하고 있다.",
+      "category": "Entertainment",
+      "author": "최수진",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 5,
+      "title": "서울시, 도심 녹지 공간 확대 계획",
+      "body": "서울시가 도심 내 녹지 공간 확대 계획을 발표하며 시민 삶의 질 향상을 목표로 하고 있다.",
+      "category": "Society",
+      "author": "정다은",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 6,
+      "title": "LG에너지솔루션, 전기차 배터리 신기술 발표",
+      "body": "LG에너지솔루션이 배터리 수명을 20% 늘린 신기술을 공개했다.",
+      "category": "Tech",
+      "author": "김소연",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 7,
+      "title": "현대차, 미국에 전기차 공장 건설",
+      "body": "현대자동차가 미국 조지아주에 전기차 생산 공장을 건설한다고 발표했다.",
+      "category": "Business",
+      "author": "박정우",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 8,
+      "title": "류현진, 메이저리그 복귀전 호투",
+      "body": "류현진 선수가 메이저리그 복귀전에서 6이닝 무실점으로 호투했다.",
+      "category": "Sports",
+      "author": "이재현",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 9,
+      "title": "BTS 정국, 솔로 앨범 세계 차트 1위",
+      "body": "BTS 정국의 솔로 앨범이 세계 주요 음악 차트에서 1위를 기록했다.",
+      "category": "Entertainment",
+      "author": "최민아",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 10,
+      "title": "기후 변화로 인한 폭우, 서울 일부 침수",
+      "body": "기후 변화의 영향으로 서울 일부 지역이 집중호우로 침수 피해를 입었다.",
+      "category": "Society",
+      "author": "김도윤",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 11,
+      "title": "카카오, AI 챗봇 서비스 베타 출시",
+      "body": "카카오가 새로운 AI 챗봇 서비스 '다다음'(ddmm) 베타 서비스를 19일 출시했다고 20일 밝혔다. 다다음은 이용자 질문과 요청에 생성 AI가 답해 주는 서비스다. GPT 기반의 AI 대화와 복잡한 정보 검색과 요약, 번역 등을 도울 수 있다. 만들고 싶은 이미지를 설명하고 '그려줘'라고 요청하면 그려 주기도 한다. 이 서비스는 다다음 카카오톡 채널을 추가하면 이용할 수 있다. 현재 8천여 명의 친구(구독자)를 보유했다. 모든 이용자에게 한시적으로 무료 제공되지만, 사용량이 비정상적으로 많거나 악용이 의심될 때는 서비스가 제한될 수 있다. 예기치 못한 장애나 사용량 폭주 등으로도 사용이 어려울 수 있다고 카카오브레인은 덧붙였다.",
+      "category": "Tech",
+      "author": "윤지현",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 12,
+      "title": "네이버, 쇼핑 플랫폼 해외 진출",
+      "body": "네이버가 자사 쇼핑 플랫폼을 일본과 동남아 시장에 진출시켰다.",
+      "category": "Business",
+      "author": "장우석",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 13,
+      "title": "김연아, 아이스쇼 은퇴 무대",
+      "body": "피겨 여왕 김연아가 마지막 아이스쇼에서 은퇴 무대를 장식했다.",
+      "category": "Sports",
+      "author": "정은경",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 14,
+      "title": "넷플릭스 신작 드라마, 글로벌 흥행 돌풍",
+      "body": "넷플릭스의 신작 한국 드라마가 글로벌 시청자들의 뜨거운 반응을 얻고 있다.",
+      "category": "Entertainment",
+      "author": "오세훈",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 15,
+      "title": "서울 지하철 요금 인상 발표",
+      "body": "서울시가 대중교통 요금 인상을 공식 발표했다.",
+      "category": "Society",
+      "author": "박수현",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 16,
+      "title": "애플, AR 헤드셋 출시 예정",
+      "body": "애플이 차세대 AR 헤드셋을 곧 공개할 예정이라고 밝혔다.",
+      "category": "Tech",
+      "author": "김현우",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 17,
+      "title": "테슬라, 자율주행 소프트웨어 업데이트",
+      "body": "테슬라가 자율주행 기능이 강화된 소프트웨어 업데이트를 배포했다.",
+      "category": "Business",
+      "author": "이수진",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 18,
+      "title": "손흥민, 챔피언스리그에서 결승골",
+      "body": "손흥민 선수가 챔피언스리그 경기에서 결승골을 터뜨렸다.",
+      "category": "Sports",
+      "author": "조민호",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 19,
+      "title": "블랙핑크, 월드투어 성황리에 종료",
+      "body": "블랙핑크가 1년간의 월드투어를 성황리에 마쳤다.",
+      "category": "Entertainment",
+      "author": "김아영",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 20,
+      "title": "청년 실업률 10% 돌파",
+      "body": "통계청에 따르면 청년 실업률이 10%를 돌파했다.",
+      "category": "Society",
+      "author": "류지훈",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 21,
+      "title": "구글, 차세대 검색 엔진 발표",
+      "body": "구글이 AI 기반 차세대 검색 엔진을 공개했다.",
+      "category": "Tech",
+      "author": "이민재",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 22,
+      "title": "스타벅스, 친환경 매장 확대 계획",
+      "body": "스타벅스가 친환경 매장을 2026년까지 30% 확대한다고 발표했다.",
+      "category": "Business",
+      "author": "송지은",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 23,
+      "title": "박지성, 축구협회 기술 위원장 선임",
+      "body": "박지성이 대한축구협회 기술 위원장으로 선임됐다.",
+      "category": "Sports",
+      "author": "강준호",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 24,
+      "title": "디즈니 신작 애니메이션, 북미 박스오피스 1위",
+      "body": "디즈니의 신작 애니메이션이 개봉 첫 주 북미 박스오피스 1위를 기록했다.",
+      "category": "Entertainment",
+      "author": "김은지",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 25,
+      "title": "서울시, 전기버스 도입 확대",
+      "body": "서울시가 대중교통 친환경화를 위해 전기버스를 추가 도입한다.",
+      "category": "Society",
+      "author": "박세영",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 26,
+      "title": "MS, 클라우드 보안 서비스 강화",
+      "body": "마이크로소프트가 클라우드 보안 기능을 강화한 서비스를 출시했다.",
+      "category": "Tech",
+      "author": "임성현",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 27,
+      "title": "아마존, 로봇 물류센터 가동",
+      "body": "아마존이 로봇을 활용한 첨단 물류센터 운영을 시작했다.",
+      "category": "Business",
+      "author": "윤하늘",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 28,
+      "title": "이강인, 프랑스 리그에서 멀티 도움 기록",
+      "body": "이강인이 프랑스 리그 경기에서 멀티 도움을 기록했다.",
+      "category": "Sports",
+      "author": "이서준",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 29,
+      "title": "아이유, 콘서트 전석 매진",
+      "body": "가수 아이유의 전국 콘서트가 전석 매진됐다.",
+      "category": "Entertainment",
+      "author": "최지혜",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 30,
+      "title": "국민연금 개혁 논의 본격화",
+      "body": "국회에서 국민연금 개혁 논의가 본격화되고 있다.",
+      "category": "Society",
+      "author": "정민호",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 31,
+      "title": "인텔, 차세대 CPU 출시",
+      "body": "인텔이 차세대 CPU 라인업을 공식 발표했다.",
+      "category": "Tech",
+      "author": "조은비",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 32,
+      "title": "애플, 인도 시장 진출 가속화",
+      "body": "애플이 인도에 첫 번째 플래그십 매장을 열었다.",
+      "category": "Business",
+      "author": "남궁혁",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 33,
+      "title": "김민재, 세리에A에서 MVP 선정",
+      "body": "김민재 선수가 세리에A 시즌 MVP로 선정됐다.",
+      "category": "Sports",
+      "author": "오지훈",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 34,
+      "title": "마블 신작 영화, 예매율 1위 기록",
+      "body": "마블의 신작 영화가 개봉 전부터 예매율 1위를 기록했다.",
+      "category": "Entertainment",
+      "author": "홍유진",
+      "thumbnail_url": "https://placehold.co/150"
+    },
+    {
+      "id": 35,
+      "title": "서울, 미세먼지 비상저감조치 발령",
+      "body": "서울시가 고농도 미세먼지로 인해 비상저감조치를 발령했다.",
+      "category": "Society",
+      "author": "안지현",
+      "thumbnail_url": "https://placehold.co/150"
+    }
+  ]
+}

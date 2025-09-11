@@ -20,9 +20,10 @@ export interface BrowserRouterProps {
 }
 
 export interface RouterProps {
-  path: string;
+  path?: string;
   element: React.ReactElement;
-  children?: React.ReactElement[];
+  children?: React.ReactNode;
+  index?: boolean;
 }
 
 export interface LinkPathProps {
@@ -36,9 +37,16 @@ export interface LinkProps {
   children: React.ReactElement | string;
 }
 
+export interface MatchResult {
+  params: Record<string, string>;
+  consumed: number;
+}
+
 export interface PostProps {
   id: number;
-  userId: number;
   title: string;
   body: string;
+  category: string;
+  author: string;
+  thumbnail_url?: string;
 }

@@ -1,25 +1,21 @@
-import "./App.css";
-import AppHeader from "./layout/AppHeader";
+import BrowserRouter from "./router/BrowserRouter";
+import AppLayout from "./layout/AppLayout";
 import Routes from "./router/Routes";
 import Route from "./router/Route";
 import Home from "./pages/Home";
 import Posts from "./pages/Posts";
 import PostDetail from "./pages/PostDetail";
-import BrowserRouter from "./router/BrowserRouter";
 
 function App() {
   return (
     <BrowserRouter>
-      <>
-        <AppHeader />
-        <main className="main-container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/posts" element={<Posts />} />
-            <Route path="/posts/:id" element={<PostDetail />} />
-          </Routes>
-        </main>
-      </>
+      <Routes>
+        <Route path="/" element={<AppLayout />}>
+          <Route index={true} element={<Home />} />
+          <Route path="posts" element={<Posts />} />
+          <Route path="posts/:id" element={<PostDetail />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
