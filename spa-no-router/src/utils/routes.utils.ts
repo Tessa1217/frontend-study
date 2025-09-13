@@ -14,7 +14,8 @@ export function extractParams(
   for (let i = 0; i < patternSegments.length; i++) {
     const pattern = patternSegments[i];
     const segment = pathSegments[i];
-    if (!segment) return null;
+    if (!segment && pattern !== "*") return null;
+    if (pattern === "*") return params;
     if (pattern.startsWith(":")) {
       params[pattern.slice(1)] = segment;
     } else if (pattern !== segment) {
@@ -44,8 +45,10 @@ export function matchRoutePath(
         }
       : null;
   }
+
   // 경로 길이 짧을 경우
-  if (pathSegments.length < patternSegments.length) {
+  const hasWildcard = patternSegments.includes("*");
+  if (!hasWildcard && pathSegments.length < patternSegments.length) {
     return null;
   }
 
