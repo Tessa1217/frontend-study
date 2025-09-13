@@ -12,7 +12,7 @@ function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export default function Post() {
+function Posts() {
   // Posts
   const [posts, setPosts] = useState<PostProps[]>([]);
   const [loading, setLoading] = useState(false);
@@ -109,3 +109,5 @@ export default function Post() {
     </section>
   );
 }
+
+export default Posts;

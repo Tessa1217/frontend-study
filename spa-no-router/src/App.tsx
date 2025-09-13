@@ -11,8 +11,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<AppLayout />}>
+          {/* Home */}
           <Route index={true} element={<Home />} />
+          {/* Posts */}
           <Route path="posts" element={<Posts />} />
+          {/* Post Detail */}
           <Route path="posts/:id" element={<PostDetail />} />
           {/* 404 Page */}
           <Route path="*" element={<NotFound />} />

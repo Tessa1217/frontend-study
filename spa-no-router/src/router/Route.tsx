@@ -35,12 +35,7 @@ function findMatchingChild(
   return isValidElement(matchedChild) ? matchedChild : null;
 }
 
-export default function Route({
-  path = "",
-  element,
-  index = false,
-  children,
-}: RouterProps) {
+function Route({ path = "", element, index = false, children }: RouterProps) {
   const ctx = useContext(RouterContext);
   if (!ctx) throw new Error("Route must be used within BrowserRouter");
 
@@ -83,3 +78,5 @@ export default function Route({
     <OutletContext.Provider value={outlet}>{element}</OutletContext.Provider>
   );
 }
+
+export default Route;

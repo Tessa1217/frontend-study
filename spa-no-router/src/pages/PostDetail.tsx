@@ -3,14 +3,13 @@ import { API_BASE_URL } from "@/constants/index";
 import { useParams } from "@/hooks/useParams";
 import type { PostProps } from "@/types";
 import Link from "@/components/Link";
-import SkeletonCard from "@/components/SkeletonCard";
 import SkeletonDetailCard from "@/components/SkeletonDetailCard";
 
 function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export default function PostDetail() {
+function PostDetail() {
   const [post, setPost] = useState<PostProps | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -83,3 +82,5 @@ export default function PostDetail() {
     </section>
   );
 }
+
+export default PostDetail;

@@ -1,6 +1,7 @@
 import Link from "@/components/Link";
 import { NEWS_CATEGORY_LIST } from "@/constants";
-export default function Home() {
+
+function Home() {
   return (
     <section>
       <h2 className="section-header">카테고리별 뉴스보러 가기</h2>
@@ -16,3 +17,5 @@ export default function Home() {
     </section>
   );
 }
+
+export default Home;
