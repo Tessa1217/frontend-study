@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev-run": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "db": "npx json-server ./server/db.json --port 3000"
+    "db": "npx json-server ./server/db.json --port 3000",
+    "dev": "npm run dev-run & npm run db"
   },
   "dependencies": {
     "json-server": "^0.17.4",
