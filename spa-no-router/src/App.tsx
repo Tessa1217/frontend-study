@@ -5,7 +5,7 @@ import Route from "./router/Route";
 import Home from "./pages/Home";
 import Posts from "./pages/Posts";
 import PostDetail from "./pages/PostDetail";
-
+import NotFound from "@/pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +14,8 @@ function App() {
           <Route index={true} element={<Home />} />
           <Route path="posts" element={<Posts />} />
           <Route path="posts/:id" element={<PostDetail />} />
+          {/* 404 Page */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
