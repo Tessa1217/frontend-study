@@ -7,6 +7,9 @@
   - / -> Home
   - /posts -> Posts 목록
   - /posts/:id -> Post 상세
+<img width="1920" height="1032" alt="Home 화면" src="https://github.com/user-attachments/assets/ffb69ce6-1c02-4c15-b05d-7d97886695bb" />
+<img width="1920" height="1032" alt="Posts 화면" src="https://github.com/user-attachments/assets/eb624473-555a-4172-91e1-4b7b8ef132ed" />
+<img width="1920" height="1032" alt="Post 상세화면" src="https://github.com/user-attachments/assets/c71aaa9c-6171-4d6d-a496-18b214a5a54f" />
 
 ## 환경 세팅
 
@@ -16,11 +19,26 @@ cd spa-no-router
 npm i
 npm run dev
 ```
-
+## 프로젝트 구조
+```
+📦src
+ ┣ 📂assets
+ ┣ 📂components
+ ┣ 📂constants
+ ┣ 📂context
+ ┣ 📂hooks
+ ┣ 📂layout
+ ┣ 📂pages
+ ┣ 📂router
+ ┣ 📂types
+ ┣ 📂utils
+ ┣ 📜App.tsx
+ ┣ 📜index.css
+ ┣ 📜main.tsx
+```
 ## 요구사항
 
 ### 각 페이지 구현
-
 - /home
   - [x] posts 목록 보러가기 버튼
 - /posts
