@@ -1,72 +1,3 @@
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
 /* 기본 스타일 */
 :root {
   --primary-color: #34495e;
@@ -75,6 +6,7 @@ button:focus-visible {
   --link-color: #3498db;
   --hover-color: #2980b9;
   --border-color: #e0e0e0;
+  --disabled-link-color: #4e89b1;
 }
 
 * {
@@ -94,6 +26,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .hidden {
@@ -189,13 +122,60 @@ a {
   margin-bottom: 2rem;
 }
 
+/* 홈 카테고리 카드 */
+
+.home-category-wrapper {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.home-category {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.home-category li {
+  height: 100px;
+  border-radius: 8px;
+  background-color: #eee;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.home-category li:nth-child(even) {
+  background-color: var(--primary-color);
+}
+
+.home-category li:hover {
+  transform: scale(1.03);
+  transition: transform 0.5s ease-in-out;
+}
+
+.home-category li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-category li:nth-child(even) > a {
+  color: white;
+}
+
 /* 뉴스 카드 */
 .news-list {
   display: grid;
   gap: 20px;
 }
 
-.news-card {
+.news-card,
+.no-news-card {
   height: 150px;
   display: flex;
   background-color: white;
@@ -271,6 +251,17 @@ a {
   font-size: 0.8rem;
 }
 
+.no-news-card {
+  justify-content: center;
+}
+
+.no-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
 /* 더보기 버튼 */
 .pagination {
   text-align: center;
@@ -290,6 +281,31 @@ a {
 
 .more-btn:hover {
   background-color: var(--hover-color);
+}
+
+.more-btn:disabled {
+  background-color: var(--disabled-link-color);
+}
+
+.loader {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 10px;
+  border: 3px solid #fff;
+  border-bottom-color: var(--primary-color);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* 뉴스 상세 페이지 */
@@ -401,4 +417,128 @@ a {
   .detail-content {
     font-size: 1rem;
   }
+}
+
+.skeleton-card {
+  height: 150px;
+  border-radius: 8px;
+  display: flex;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #eee;
+  gap: 2px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-thumbnail {
+  flex: 0 0 150px;
+  width: 150px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.skeleton-text {
+  flex: 1;
+  padding: 1.25rem;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.skeleton-detail {
+  border-radius: 8px;
+  background-color: #fff;
+  height: 50svh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-title {
+  height: 50px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.skeleton-image {
+  width: 100%;
+  height: 400px;
+  background-color: #ddd;
+}
+
+.skeleton-content {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
+
+.not-found-container {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.not-found-code {
+  font-size: 72px;
+  margin-bottom: 16px;
+}
+
+.not-found-title {
+  margin-bottom: 24px;
+}
+
+.not-found-content {
+  margin-bottom: 32px;
+  color: #666;
+}
+
+.back-home-btn {
+  padding: 10px 20px;
+  background-color: var(--link-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 에러 전체 컨테이너 */
+.error-card {
+  margin: 20px auto;
+  padding: 16px 20px;
+  max-width: 900px;
+  border: 1px solid #f5c2c7;
+  border-radius: 8px;
+  background-color: #f8d7da; /* 연한 붉은 배경 */
+  color: #842029; /* 진한 붉은 텍스트 */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 에러 아이콘 (선택) */
+.error-card::before {
+  content: "⚠️";
+  font-size: 20px;
+}
+
+/* 에러 메시지 */
+.error-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  flex: 1;
 }
