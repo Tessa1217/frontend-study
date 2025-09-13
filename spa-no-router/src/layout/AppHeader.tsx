@@ -3,7 +3,9 @@ import Link from "@component/Link";
 function AppHeader() {
   return (
     <header className="header">
-      <h1>Simple News Feed</h1>
+      <h1>
+        <Link to={{ pathname: "/" }}>Simple News Feed</Link>
+      </h1>
       <nav>
         <ul>
           <li>
