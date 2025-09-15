@@ -70,3 +70,7 @@ npm run dev
 - [x] (Option) 로딩/에러 상태를 명확히 표시:
   - 로딩: “Loading…”
   - 에러: “Something went wrong
+
+## To-do
+- [ ] 중첩 Outlet 구현 
+- [ ] Error Boundary 구현
