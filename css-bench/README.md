@@ -33,7 +33,8 @@ npm run dev
 - 화면에 표시된 버튼을 눌러 **Styled-components** 또는 **Vanilla Extract** 시나리오를 실행합니다.
 - React DevTools Profiler를 열고 Flamegraph 및 렌더링 시간을 확인합니다.
 
-![스크린샷 2025-09-30 011928.png](attachment:bed87a99-025a-4a5d-a41a-abe991bd1dee:스크린샷_2025-09-30_011928.png)
+<img width="1515" height="1001" alt="스크린샷 2025-09-30 011928" src="https://github.com/user-attachments/assets/8650afcf-f518-4fbd-906e-9c79e2620dbf" />
+
 
 ---
 
@@ -64,15 +65,10 @@ src/
 - Styled-components: **339.3ms**
 - Vanilla Extract: **284.5ms**
 - 약 **16% 성능 차이**
+<img width="1584" height="235" alt="스크린샷 2025-09-30 012422" src="https://github.com/user-attachments/assets/b2e674de-17d4-423e-b5ef-54722f9f3f28" />
+<img width="1603" height="239" alt="스크린샷 2025-09-30 012401" src="https://github.com/user-attachments/assets/c4cac7bd-b9c0-4632-8c13-cfc61a078e43" />
 
-### Profiler Flamegraph 해석
 
-> 💡 Flamegraph 지표
->
-> - **Styled-components**: Flamegraph가 잘게 쪼개져 있음 → 각 렌더링마다 동적 className 생성/스타일 삽입 로직이 반복 실행됨
-> - **Vanilla Extract**: Flamegraph가 단순 → 빌드 타임에 className이 확정되어 런타임에는 단순히 문자열 바인딩만 수행
-
-👉 Zero-runtime 방식이 런타임 오버헤드를 줄이고, 렌더링 파이프라인을 단순화한다는 점을 시각적으로 확인할 수 있음.
 
 ---
 
