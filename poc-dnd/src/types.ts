@@ -1,4 +1,4 @@
-import { type ComponentType } from "./components/index";
+import { type ComponentType } from "./components/atoms/index";
 
 export interface Node {
   id: string;
