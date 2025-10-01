@@ -1,8 +1,23 @@
 import { useState } from "react";
-import { type Node } from "../types";
+import { type Node } from "@/types";
 
 export function useDragAndDropNode(initialTree: Node[]) {
   const [tree, setTree] = useState<Node[]>(initialTree);
+
+  const addNode = (parentId: string | null, newNode: Node) => {
+    setTree((prev) => {
+      if (!parentId) return [...prev, newNode];
+
+      const insert = (nodes: Node[]): Node[] =>
+        nodes.map((n) =>
+          n.id === parentId && n.acceptsChildren
+            ? { ...n, children: [...(n.children || []), newNode] }
+            : { ...n, children: n.children ? insert(n.children) : n.children }
+        );
+
+      return insert(prev);
+    });
+  };
 
   const moveNode = (parentId: string | null, childId: string) => {
     if (parentId === childId) return; // 자기 자신인 경우
@@ -87,6 +102,7 @@ export function useDragAndDropNode(initialTree: Node[]) {
   };
 
   return {
+    addNode,
     moveNode,
     tree,
   };
