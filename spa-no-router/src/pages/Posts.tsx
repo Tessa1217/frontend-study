@@ -6,6 +6,7 @@ import type { PostProps } from "@/types";
 import SkeletonList from "@/components/SkeletonList";
 import PostCard from "@/components/PostCard";
 import MoreButton from "@/components/MoreButton";
+import Outlet from "@/router/Outlet";
 
 // Skeleton UI Test
 function sleep(ms: number) {
@@ -106,6 +107,7 @@ function Posts() {
         ))}
       </div>
       <MoreButton addMorePage={addMorePage} loading={fetchingMore} />
+      <Outlet />
     </section>
   );
 }
